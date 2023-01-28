@@ -1,0 +1,561 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.sec1{
+
+
+    height: 100vh;
+    position: relative;
+    background-image: url(./images/cryptocurrency-coding-digital-blue-background-open-source-blockchain-concept_53876-124644.webp);
+}
+
+nav{
+    width: 100%;
+    height: 120px;
+    font-weight: bold;
+    position: relative;
+}
+.logo-name{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 35px;
+    left: 10%;
+}
+
+.logo{
+    width: 130px;
+    height: 45px;
+}
+nav ul{
+   float: left;
+   margin: 2% 29%;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+nav ul li a{
+    display: block;
+    font-size: 30px;
+    padding: 22px 14px;
+    text-decoration: none;
+    color: white;
+}
+nav ul li ul{
+    transform: scale(0,0);
+    position: absolute;
+    border: 1px solid black;
+    background-color: #000000;
+    padding: 10px;
+    margin-top: -10px;
+    z-index: 12;
+}
+.downdrop li{
+    width: 180px;
+}
+nav ul li ul li a{
+    padding: 8px 14px;
+}
+nav ul li ul li a:hover{
+    background-color: #f3f3f381;
+    border-radius: 12px;
+}
+nav ul li:hover ul{
+transform: scale(1,1);
+transition: all 0.7s;
+z-index: 12;
+}
+
+.top{
+    position: relative;
+}
+
+.top::after{
+    content: "";
+    height: 0;
+    width: 100%;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-right: 2px solid #20c6f0;
+    border-left: 2px solid  #219ebc;
+    position: absolute;
+ 
+}
+.top:hover::after{
+
+    height: 100%;
+    transition: 0.7s;
+}
+.top::before{
+    content: "";
+    height: 100%;
+    width: 0;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    border-bottom: 2px solid #34bfe2;
+    border-top: 2px solid    #36b8d8;
+    position: absolute;
+
+}
+.top:hover::before{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10,10,10,0.6);
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+.pic{
+    width: 700px;
+    height: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    background-image: url(./images/2204_Crypto-Educational-Email-4-1920x1080-EN.png);
+    background-size: cover;
+    border-radius: 12px;
+    position: relative;
+}
+.pic-content{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.c1, .c2,.c3,.c4, .c5{
+    font-size: 40px;
+    margin: 80px 30px;
+}
+.overlay-pic{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(10,10,10,0.8);
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 12px;
+    transition: all 1s;
+}
+.pic:hover .overlay-pic{
+    visibility:visible;
+    opacity: 1;
+
+}
+.welcome{
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.readmore a{
+    color: rgb(38, 147, 180);
+    text-decoration: underline;
+}
+
+.num{
+    width: 30px;
+    height: 30px;
+    background-color: #a8dadc;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+
+.num p{
+    text-align: center;
+}
+.head-icons{
+    width: 500px;
+    height: 150px;
+    text-align: center;
+    left: 60%;
+    position: absolute;
+    top: 20px;
+}
+.search{
+    padding-left: 10px;
+    margin-right: 30px;
+}
+.input{
+    border-radius: 12px;
+    width: 200px;
+    height: 25px;
+    border: none;
+}
+
+.user, .search{
+    font-size: 30px;
+    color: white;
+margin-top: 30px;
+}
+.wallet{
+    font-size: 30px;
+    color: white;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.wallet-circle{
+
+    position: absolute ;
+    display: inline;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+.parent{
+    width: 90%;
+    overflow: auto;
+    margin: 40px auto;
+font-family: "";
+    height: 430px;
+}
+.title1{
+    color: #000000;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+}
+.title2{
+    font-family: 'Bebas Neue';
+    color: white;
+}
+.line{
+    height: 3px;
+    width: 150px;
+    background-color: #00bbf9;
+    margin: auto;
+    transition: all 0.8s;
+}
+.line:hover{
+    transform: scale(1.5,1);
+}
+
+.crypto{
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 12px 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+     float: left;
+     transition: all 1s;
+     position: relative;
+     background-image: url(./images/ethereum\ background.jpg);
+     background-size: 250px 350px;
+     background-position: center;
+}
+
+.overlay1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10,10,10,0.6);
+    position: absolute;
+    border-radius: 12px 20px;
+}
+
+.coin-pic img{
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
+    background-position: center 10px;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+
+
+
+.invest{
+    font-family: 'Bebas Neue', cursive;
+    width: 140px;
+    height: 30px;
+    margin: 30px auto;
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: #000000;
+    transition: all 1s;
+}
+.invest:hover{
+    background-color: #b9b9b9a4;
+}
+
+.invest h4{
+    text-transform: capitalize;
+    color: white;
+}
+.crypto-content{
+    margin: auto;
+    text-align: center;
+}
+.parent2{
+    width: 90%;
+    height: 350px;
+    overflow: auto;
+    margin: auto;
+
+    padding-top: 40px;
+    
+}
+
+.des1{
+    width: 500px;
+    height: 320px;
+    float: left;
+    border-radius: 14px;
+    background-color: #a8dadc;
+    margin-left: 5%;
+    font-family: 'Bebas Neue', cursive;
+}
+.des1-content{
+    width: 400px;
+    height: 200px;
+    margin: auto;
+}
+.des1-content span{
+    font-size: 20px;
+}
+.dash{
+    height: 3px;
+    width: 50px;
+    background-color: #006d77;
+    float: right;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+.title{
+    display: inline;
+    font-size: 30px;
+
+}
+.coins{
+    padding: 20px 10px;
+    margin: auto;
+    font-size: 40px;
+    color: #1d3557;
+}
+.des2{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 30px;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+}
+.first{
+    width: 300px;
+    height: 300px;
+
+}
+.des2:hover{
+    transform: scale(1.1,1.1);
+}
+.service{
+
+    margin-left: 10px;
+}
+.first1, .second, .third, .fourth{
+    width:200px;
+    height: 120px;
+    border-right: 1px solid black;
+    float: left;
+}
+
+.fifth{
+    width:200px;
+    height: 150px;
+    float: left;
+}
+h3, p{
+    font-family: 'Bebas Neue', cursive;
+font-size: 20px
+}
+
+
+.slide-icon{
+    height: 50px;
+    background-repeat: no-repeat;
+    transition: 0.6s;
+}
+.slide-info{
+    padding-top: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.slide-icon-1{
+    background-image: url(./images/service-icon.png);
+    background-position: center 5px;
+}
+.first1:hover .slide-icon-1{
+    background-position: center -86px;
+}
+.slide-icon-2{
+    background-image: url(./images/service-icon.png);
+    height: 50px;
+    background-position: center -180px;
+}
+.second:hover .slide-icon-2{
+    background-position:  center -270px;
+}
+.slide-icon-3{
+    background-image: url(./images/service-icon.png);
+    height: 50px;
+    background-position: center -360px;
+}
+
+.third:hover .slide-icon-3{
+    background-position:  center -455px;
+}
+.slide-icon-4{
+    background-image: url(./images/service-icon.png);
+    height: 50px;
+    background-position: center -550px;
+}
+
+.fourth:hover .slide-icon-4{
+    background-position:  center -640px;
+}
+.slide-icon-5{
+    background-image: url(./images/service-icon.png);
+    height: 50px;
+    background-position: center -730px;
+}
+.fifth:hover .slide-icon-5{
+    background-position: center -830px;;
+}
+
+.parent3{
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.line3{
+    width: 85%;
+    height: 1px;
+    background-color: #000000;
+    margin: auto;
+}
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+.parent-box{
+    width: 85%;
+    overflow: auto;
+    margin: auto;
+    font-family: 'Bebas Neue';
+}
+.box{
+    width: 30%;
+    height: 500px;
+    /* background-color: #000000; */
+    float: left;
+    margin: 30px 17px;
+    text-align: center;
+}
+
+.category{
+    width: 550px;
+    height: 50px;
+    margin: 30px auto;
+}
+
+.category ul li{
+    font-size: 23px;
+    display: inline;
+    text-align: center;
+    padding-left: 65px;
+
+}
+.coin-img{
+    width: 345px;
+    height: 300px;
+    border-radius: 6px;
+    background-position: center;
+    background-size: cover;
+}
+.coin-name{
+    color: white;
+    font-size: 30px;
+}
+.social{
+    color: #e5e5e5;
+    font-size: 30px;
+    margin: 20px 20px;
+}
+.overlay-coin{
+    width: 345px;
+    height: inherit;
+    border-radius: 7px;
+    background-image: url(./images/overlay.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    position: relative;
+    transition: all 0.7s;
+    transform: scaleX(0);
+}
+.overlay-coin-opacity{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 7px;
+    background-color: rgba(10,10,10,0.7);
+}
+.coin-content{
+    width: inherit;
+    height: 151px;
+    position: absolute;
+    margin-top: 70px;
+}
+
+.coin-img:hover .overlay-coin{
+    transform: scaleX(1);
+}
+
+
+.traders, .star{
+    display: inline;
+    margin-top: 20px;
+    font-size: 25px;
+ 
+}
+
+
+.star{
+    color: #ffb703;
+    font-size: 20px;
+}
+.transition{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 23px;
+}
+.transition b{
+    color: green;
+}
+
