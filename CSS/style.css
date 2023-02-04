@@ -415,7 +415,6 @@ font-size: 20px
 }
 .slide-icon-2{
     background-image: url(./images/service-icon.png);
-    height: 50px;
     background-position: center -180px;
 }
 .second:hover .slide-icon-2{
@@ -423,7 +422,6 @@ font-size: 20px
 }
 .slide-icon-3{
     background-image: url(./images/service-icon.png);
-    height: 50px;
     background-position: center -360px;
 }
 
@@ -432,7 +430,6 @@ font-size: 20px
 }
 .slide-icon-4{
     background-image: url(./images/service-icon.png);
-    height: 50px;
     background-position: center -550px;
 }
 
@@ -441,7 +438,6 @@ font-size: 20px
 }
 .slide-icon-5{
     background-image: url(./images/service-icon.png);
-    height: 50px;
     background-position: center -730px;
 }
 .fifth:hover .slide-icon-5{
